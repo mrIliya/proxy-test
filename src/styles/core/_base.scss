@@ -1,0 +1,59 @@
+:root{
+    --body--overflow : visible;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: "OpenSans-Regular", sans-serif;
+    overflow-x: hidden;
+    overflow: var(--body--overflow);
+    margin: 0;
+    &.lock{
+        overflow: hidden;
+    }
+}
+
+.container{
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+}

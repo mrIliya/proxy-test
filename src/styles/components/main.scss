@@ -1,0 +1,125 @@
+.main {
+    padding: 40px 20px;
+    font-size: 30px;
+    background-color: rgb(25 125 177 / 62%);
+    min-height: 100vh;
+
+}
+
+.users {
+    &__noresults {
+        text-align: center;
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    padding: 20px 10px;
+    max-width: 700px;
+    margin: 0 auto;
+
+    &__name {
+        color: rgb(9 41 64);
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        border: 2px solid #c7de29;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 5px 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #131837;
+        transition: all ease-out .6s;
+
+        &:hover {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+}
+
+.user-posts,
+.user-albums {
+    &__list {
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    &__line {
+
+        &+li {
+            margin-left: 30px;
+        }
+
+        &.preview-mode {
+            width: 100px;
+            height: 200px;
+
+            .post__title,
+            .album__name {
+                font-size: 20px;
+            }
+
+            .post__text {
+                font-size: 10px;
+            }
+
+            .post__btn {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.post,
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__text {
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+.post {
+    &__btn {
+        margin: 20px 0;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.search {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
