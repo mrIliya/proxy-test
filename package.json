@@ -1,7 +1,7 @@
 {
   "name": "proxy-test",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://mriliya.github.io/proxy-test/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build --base=./",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
