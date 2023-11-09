@@ -28,7 +28,13 @@ function UserAlbum({ album }) {
         <div className='album'>
             <h3 className='album__name'>{currentAlbum?.albumName}</h3>
 
-            <Link to={`/user/${userId}/albums/${currentAlbum?.albumId}`}>
+            <Link
+                to={`${currentAlbum?.albumId}`}
+                className={
+                    !album || Object.keys(album).length === 0
+                        ? 'disabled-link'
+                        : ''
+                }>
                 <button className='album__btn'>
                     {currentAlbum?.albumImage && (
                         <img

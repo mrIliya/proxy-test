@@ -21,7 +21,7 @@ function UserPosts() {
 
     return (
         <div className='user-posts'>
-            <Link to={`/`}>Home</Link>
+            <Link to={`/proxy-test`}>Home</Link>
             <ul className='user-posts__list'>
                 {posts.length > 0 &&
                     posts.map((post) => {

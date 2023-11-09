@@ -27,9 +27,11 @@ function UserPost({ post }) {
         <article className='post'>
             <h4 className='post__title'>{currentPost?.postName}</h4>
             <p className='post__text'>{currentPost?.postText}</p>
-            <Link to={`/user/${userId}/posts/${currentPost?.postId}`}>
-                <button className="post__btn">see post</button>
-            </Link>
+            {post && Object.keys(post).length > 0 && (
+                <Link to={`${currentPost?.postId}`}>
+                    <button className='post__btn'>see post</button>
+                </Link>
+            )}
         </article>
     )
 }

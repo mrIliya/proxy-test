@@ -7,11 +7,11 @@ import UserPost from '../components/UserPosts/UserPost';
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/proxy-test',
         element: <UsersList />,
     },
     {
-        path: 'user/:id/albums',
+        path: '/proxy-test/user/:id/albums',
         element: <UserAlbumsList />,
         children: [
             {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         ],
     },
     {
-        path: 'user/:id/posts',
+        path: '/proxy-test/user/:id/posts',
         element: <UserPostsList />,
         children: [
             {

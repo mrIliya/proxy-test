@@ -20,7 +20,7 @@ function UserAlbums() {
     })
     return (
         <div className='user-albums'>
-            <Link to={`/`}>Home</Link>           
+            <Link to={`/proxy-test`}>Home</Link>           
             <ul className='user-albums__list'>
                 {albums?.length > 0 &&
                     albums.map((album) => {
