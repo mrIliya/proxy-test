@@ -2,10 +2,10 @@ import UserAlbumsList from '../components/UserAlbums/UserAlbumsList';
 import UserAlbum from '../components/UserAlbums/UserAlbum';
 import UserPostsList from '../components/UserPosts/UserPostsList';
 import UsersList from '../components/Users/UsersList';
-import { createHashRouter } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 import UserPost from '../components/UserPosts/UserPost';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
         path: '/proxy-test',
         element: <UsersList />,
